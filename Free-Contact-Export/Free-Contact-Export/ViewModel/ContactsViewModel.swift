@@ -9,7 +9,7 @@ import Foundation
 import Contacts
 import UIKit
 
-final class ContactViewModel: ObservableObject {
+final class ContactsViewModel: ObservableObject {
     @Published
     var contacts: [Contact] = []
     @Published
