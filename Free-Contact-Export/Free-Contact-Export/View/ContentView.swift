@@ -30,7 +30,7 @@ struct ContentView: View {
                     }
                 }
                 
-            }.navigationTitle("Import Contact")
+            }.navigationTitle( contactsVM.contacts.count == 0 ? "Import Contact" : "Contacts")
                 .navigationBarTitleDisplayMode(.inline)
         }
         .alert(item:$contactsVM.permissionsError) { _ in
